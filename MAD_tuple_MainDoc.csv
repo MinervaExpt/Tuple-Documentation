@@ -1,0 +1,35 @@
+﻿"Branch
+ Name","Branch
+Group","Data
+Type",MC Only?,"Which Trees Is 
+This Filled In?
+(MasterAnaDev, Truth, Meta)","Branch 
+Content Description","Branch 
+Use Description
+(MAT/MAT-MINERvA
+locations/analyses)",Public-facing Document,
+,,,,,,,,
+event_unused_start_vertices,Event Content Overview,Int,NO,MasterAnaDev,“event_unused_start_vertices” means the number of reconstructed vertices that are not associated with any event candidate.,Use Uncommon,,
+event_used_start_vertices,,Int,NO,MasterAnaDev," “event_used_start_vertices”
+ means the number of reconstructed
+ start vertices that are associated
+ with the event candidate.",Use Uncommon,,
+all_event_start_vertex_fv_minos_match_sz,,Int,NO,MasterAnaDev,Size of following vector,Use Uncommon,,
+all_event_start_vertex_fv_minos_match[all_event_start_vertex_fv_minos_match_sz],,Int,NO,MasterAnaDev,"Stores a list of integers (0 or 1) for all reconstructed event start vertices, where each entry indicates whether that vertex is inside the MINERvA fiducial volume (FV) and is geometrically matched to the MINOS detector.",Use Uncommon,,
+all_event_start_vertex_time_sz,,Int,,MasterAnaDev,Size of following vector,Use Uncommon,,
+all_event_start_vertex_time[all_event_start_vertex_time_sz],,Double,NO,MasterAnaDev,Stores the reconstructed time (in ns) of all used start vertices in the event. Each entry is one vertex’s getTime() value.,Use Uncommon,,
+all_event_start_vertex_time_minos_match_sz,,Int,NO,MasterAnaDev,Size of following vector,Use Uncommon,,
+all_event_start_vertex_time_minos_match[all_event_start_vertex_time_minos_match_sz],,Double,NO,MasterAnaDev,Stores the reconstructed times (in ns) of start vertices that are matched to MINOS (either via a MinosTrack or MinosStub prong).,Use Uncommon,,
+n_minos_matches,,Int,NO,MasterAnaDev,Number of reconstructed start vertices in the event that are associated with at least one MINOS match (either a track or stub).,Use Uncommon,,
+slice_n_hits,,Int,NO,MasterAnaDev,Stores the total number of hits in the slice.,Use Uncommon,,
+slice_hit_energy_sz,,Int,NO,MasterAnaDev,Size of following vector,Use Uncommon,,
+slice_hit_energy[slice_hit_energy_sz],,Double,NO,MasterAnaDev,Stores the normalized energy of each hit in the slice. One entry per hit.,Use Uncommon,,
+slice_hit_time_sz,,Int,NO,MasterAnaDev,Size of following vector,Use Uncommon,,
+slice_hit_time[slice_hit_time_sz],,Double,NO,MasterAnaDev,Stores the time of each hit in the slice. One entry per hit.,Use Uncommon,,
+event_in_time_vertex_types_sz,,Int,NO,MasterAnaDev,Size of following vector,Use Uncommon,,
+event_in_time_vertex_types[event_in_time_vertex_types_sz],,Int,NO,MasterAnaDev,Stores the types of reconstructed vertices that are in-time with the beam spill or trigger window. Helps distinguish between true interaction vertices and out-of-time background vertices,Use Uncommon,,
+event_vertex_types_sz,,Int,NO,MasterAnaDev,Size of following vector,Use Uncommon,,
+event_vertex_types[event_vertex_types_sz],,Int,NO,MasterAnaDev,"Stores the types of reconstructed vertices in an event. Each entry corresponds to a classification assigned during reconstruction (e.g., primary interaction vertex, secondary decay vertex, or noise).",Use Uncommon,,
+event_vertex_time_diff_sz,,Int,NO,MasterAnaDev,Size of following vector,Use Uncommon,,
+event_vertex_time_diff[event_vertex_time_diff_sz],,Double,NO,MasterAnaDev,Stores the timing difference (Δt) of reconstructed start vertices relative to the event time. This helps in identifying whether the vertex is in-time or out-of-time with the beam. Units are usually in nanoseconds.,Use Uncommon,,
+,,,,,,,,
